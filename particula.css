@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #229327; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+
+
+/* Contenedor de partículas */
+#particles-js {
+    position: fixed; /* O absolute, para que no empuje el contenido */
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #28a745 0%, #1a4d1a 100%); /* El color verde de tu fondo */
+    z-index: -1; /* Lo manda al fondo */
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.profile-img {
+    width: 300px; /* Ajusta según el tamaño de tu imagen original */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    /* Si tu imagen ya tiene el círculo y los pájaros, no uses border-radius */
+}
+
+h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: -1px; /* Valor negativo para juntar las letras */
+    text-transform: uppercase;
+}
+
+
+.music-player {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
+
+#btnPlayPausa {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+#btnPlayPausa:hover {
+    transform: scale(1.1);
+}
+
+#btnPlayPausa i {
+    color: #333;
+}

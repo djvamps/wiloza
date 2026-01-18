@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiloza - Williams Lopez Zavaleta</title>
+
+    <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="particula.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        
+</head>
+<body>
+
+
+    <!-- particles.js container --> <div id="particles-js"></div> 
+    <div class="content-overlay">
+
+    <img src="wiloza.png" alt="Perfil" class="profile-pic">
+    <h1>JL ZV </h1>
+
+    <div class="music-player">
+    <audio id="miAudio" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+    <div class="controls">
+        <button id="btnPlayPausa">
+    <i id="icono" class="fas fa-play"></i>
+</button>
+        <input type="range" id="controlVolumen" min="0" max="1" step="0.1" value="0.5">
+    </div>
+</div>
+
+</div>
+    
+    <!-- stats - count particles --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    
+
+
+
+    <script src="particula.js"></script>
+</body>
+</html>
